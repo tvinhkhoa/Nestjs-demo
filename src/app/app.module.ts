@@ -24,9 +24,9 @@ ConfigService.rootPath = path.resolve(__dirname, '..');
 export class AppModule {
   constructor(private readonly config: ConfigService) {
     this.config = config;
-    console.log(config);
+    // console.log(config);
 
     const appConfig = this.config.get('database');
-    console.log( 'App config is',  appConfig ); // App URL is undefined
+    // console.log( 'App config is',  appConfig ); // App URL is undefined
   }
 }
